@@ -1,0 +1,85 @@
+#contacts-page-container {
+  display: grid; 
+  grid-template-columns: 300px 1fr; /*this is hardcoded right now ???*/
+  gap: 0.2rem; 
+  justify-content: center;
+  height: 100%;
+}
+
+/*-------------------groups card*/
+.contacts-group-container {
+  display: grid;
+  height: 100%;
+}
+
+.contacts-groups-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*groups*/
+.group {
+  font-size: var(--normal-size);
+  background-color: white;
+  border: 0; 
+  color: var(--medium);
+  margin-top: 0.3rem; 
+}
+.group:hover {
+  color: black;
+}
+
+/*------------------actual contacts*/
+.contacts-container {
+  margin-top: 1rem;
+  display: grid; 
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr;
+  padding: 0.75rem; 
+  height: 100%; 
+}
+
+#add-contacts-btn {
+  grid-column: 3;
+}
+#contacts-title {
+  grid-column: 1;
+}
+.contacts-list {
+  grid-column: 1 / span 3;
+  display: grid; 
+}
+
+/*------------------POPUP*/
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  height: 60%;
+  width: 320px;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  margin-top: 0;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width:1024) {
+  #contacts-page-container {
+    display: grid; 
+    grid-template-columns: 300px 1fr; /*what should phone screen look like ???*/
+    gap: 0.2rem; 
+    justify-content: center;
+    height: 100%
+  }
+
+}
