@@ -1,31 +1,9 @@
 /*
-Font
-*/
-
-.a-text{
-  font-family: Arial;
-}
-
-/*
-1on1 Font
-*/
-
-#icon{
-  font-size: 40px;
-  padding-left: 10px;
-  padding-right:10px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 0;
-}
-
-/*
 Change Colour of Page
 */
 
 .body-calendar-list{
-  background-color: #c4499d;
-  margin: 0;
+  background-color: var(--light);
 }
 
 /*
@@ -43,23 +21,13 @@ Size of Page
 Header Styling
 */
 
-/* For Phone View*/
-/*
-@media screen and (max-width: 400px) {
-  #a-hide{
-    display:none;
-  }
-}
-*/
-
 .header {
   display:inline-block;
   font-size: 4vmin;
   display: flex;
-  color: #F67E7D;
-  background-color: #0B032D;
+  background-color: var(--darkest);
   width: 100%;
-  height: 70px;
+  height: var(--header-height);
 }
 
 .div-header-content{
@@ -69,6 +37,10 @@ Header Styling
 }
 
 .a-nav{
+  font-family: var(--font);
+  font-size: var(--normal-size);
+  color: var(--color-link); 
+  text-decoration: none;
   border-radius: 10px;
   height:100%;
   padding-left:2vmin;
@@ -78,9 +50,14 @@ Header Styling
 }
 
 .a-nav:hover{
+  color: var(--lightest);
   background-color: rgb(122, 17, 136);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
   cursor:pointer;
+}
+
+.img-profile-margin{
+  margin-left:5px;
 }
 
 .div-dropdown {
@@ -96,7 +73,6 @@ Header Styling
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
-  margin-top: 5px;
   z-index: 1;
 }
 
@@ -115,13 +91,14 @@ Footer Styling
 */
 
 .footer {
+  font-family: var(--font);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0B032D;
   width: 100%;
   height: 5%;
-  color: #F67E7D;
+  color: var(--lightest);
   bottom: 0;
   position: absolute;
 }
