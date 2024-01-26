@@ -1,0 +1,70 @@
+/*
+Change Colour of Page
+*/
+
+.body-calendar-list{
+  background-color: var(--light);
+}
+
+/*
+Size of Page
+*/
+
+.div-page-container {
+  position: relative;
+  width:100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/*
+Add Calendar Button
+*/
+
+.div-add-button{
+  width:100%;
+  display:flex;
+  justify-content: right;
+}
+
+.span-calendar-button{
+  text-align: center;
+  width: 200px;
+  border-radius: 15px;
+  color:white;
+  margin:10px 20px;
+  background-color: var(--darkest);
+}
+
+.span-calendar-button:hover{
+  background-color: #240e85;
+}
+
+.p-plus{
+  display:inline-block;
+  color:white;
+}
+
+.p-calendar{
+  display:inline-block;
+  color:white;
+}
+
+/*
+Calendar Display
+*/
+
+.div-calendar-display{
+  border-radius: 30px;
+  background-color: var(--medium);
+  size: 100%;
+  margin: 0px 20px;
+  height:550px;
+}
+
+.h1-empty-list{
+  color: var(--darkest);
+  font-family: var(--font);
+  text-align: center;
+  padding: 20px;
+}
