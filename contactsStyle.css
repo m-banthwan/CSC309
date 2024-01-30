@@ -51,6 +51,18 @@
   display: grid; 
 }
 
+.editable-text {
+  border: none;   
+  margin: 5px; 
+}
+.editable-text:hover {
+  border: 2px solid var(--lightest); 
+  border-radius: 3px;
+  cursor: auto; 
+  margin: 0; 
+  padding: 3px; 
+}
+
 /*------------------POPUP*/
 .popup {
   display: none;
@@ -72,8 +84,30 @@
   cursor: pointer;
 }
 
+/*------------------SCREENS*/
+@media screen and (min-width:1024px) {
+  #contacts-page-container {
+    display: grid; 
+    grid-template-columns: 300px 1fr;  
+    gap: 0.2rem; 
+    justify-content: center;
+    height: 100%
+  }
 
-@media screen and (min-width:1024) {
+}
+
+@media screen and (max-width:900px) {
+  #contacts-page-container {
+    display: grid; 
+    grid-template-columns: 300px 1fr;  
+    gap: 0.2rem; 
+    justify-content: center;
+    height: 100%
+  }
+
+}
+
+@media screen and (max-width:400px) {
   #contacts-page-container {
     display: grid; 
     grid-template-columns: 300px 1fr; /*what should phone screen look like ???*/
