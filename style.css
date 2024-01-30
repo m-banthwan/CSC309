@@ -21,7 +21,7 @@
   --stdn-margin: 1.5rem;
 
   /*responsive text*/
-  @media screen and (max-width: 560px) {
+  @media screen and (max-width: 900px) {   /* this shit aint working ??? */
     :root {
       --title-size: 1.5rem;
       --normal-size: 0.9rem; 
@@ -37,7 +37,7 @@
   }
 }
 body {
-  height: 100%;
+  min-height: 100vh;
   margin: 0; 
 }
 p, a, table, label {
@@ -55,7 +55,9 @@ a {
 
 .body-container {
   width: 100%;
-  margin: 0; 
+  height: 100vh; 
+  margin-top: var(--header-height);
+  margin-bottom: var(--footer-height);
   display: inline-grid; 
   justify-content: center;
   align-items: center;
@@ -78,7 +80,7 @@ a {
   place-self: center;
 }
 
-form > input {
+form > input:not([type="file"]) {
   border: 0.15rem solid var(--lightest);
   border-radius: 1.5rem;
   font-size: var(--normal-size);
@@ -88,6 +90,7 @@ form > input {
 form > * {
   margin-top: var(--stdn-margin);
   place-self: center;
+  font-size: var(--normal-size);
 }
 form > input:focus {
   border-width: 0.15rem; 
@@ -106,9 +109,9 @@ form > input:focus {
   border: 0;
   background-color: var(--darkest);
   color: var(--lightest); 
-  padding: 0.5rem; 
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  margin-top: 50px;
 }
 
 .button-add {

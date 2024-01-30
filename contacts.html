@@ -4,16 +4,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <link href="contactsStyle.css" rel="stylesheet">
+    <link href="header-footer.css" rel="stylesheet">
     <script src="contactsScript.js"></script>
   </head>
 
   <body>
+    <!-- HEADER -->
+    <div class="div-header">
+      <header class="header">
+        <div class="div-header-content">
+          <div class="div-icon">
+            <a class="a-nav" id="icon">1on1</a>
+          </div>
+          <div class="div-left-links">
+            <a class="a-nav">Calendars</a>
+            <a class="a-nav">Contacts</a>
+          </div>
+          <div class="div-right-links">
+            <div class="div-dropdown">
+              <span>
+                <img src="assets/profile1.png" class="img-profile">
+              </span>
+                <div class="div-dropdown-content">
+                  <a class="a-dropdown-links">Profile</a>
+                  <a class="a-dropdown-links">Logout</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
 
-    <!--header goes here-->
+    <!-- MAIN CONTENT -->
     <div id="contacts-page-container" class="body-container">
       <!--div below is on the left (contact groups)-->
       <div class="card contacts-group-container">
-        <p class="title">Groups</p>
+        <p id="group-title" class="title">Groups</p>
         <div class="contacts-groups-list">
           <label class="group">CSC309</label>
           <label class="group">Roommates</label>
@@ -22,32 +48,33 @@
         <input type="button" id="add-groups-btn" class="button-add" value="+"></input>
       </div>
 
+      <!--START GROUP POP UP-->
+      <div id="new-group-popup" class="popup card">
+        <form>
+          <p class="title">New Group</p>
+          <span id="groups-close-button" class="close-button">&times;</span>
+          <input type="text" name="name" placeholder="Group Name" required> </input>
+
+          <label>Select group members:</label>
+          <select required name="groups" multiple>
+            <option value="DavidGorospe">David Gorospe</option>
+            <option value="EmilyDu">Emily Du</option>
+            <option value="HappyNasit">Happy Nasit</option>
+            <option value="MugdhaBanthwan">Mugdha Banthwan</option>
+          </select>
+          <input type="submit" class="button-submit" value="Create Group"></input>
+        </form>
+      </div>
+      <!--END GROUP POP UP-->
+
       <!--div below is on the right (contacts)-->
       <div class="contacts-container">
         <p id="contacts-title" class="title">Contacts</p>
         <input type="button" id="add-contacts-btn" class="button-add" value="+"></input>
 
-
-        <!--START CONTACT POP UP-->
-        <div id="new-contact-popup" class="popup card">
-          <form>
-            <p class="title">New Contact</p>
-            <span id="contactCloseButton" class="close-button">&times;</span>
-            <input type="text" name="name" placeholder="Name" required> </input>
-            <input type="email" name="email" placeholder="Email" required> </input>
-            <div>
-              <label>Select a profile picture:</label>
-              <input required type="file" name="profile"></input>
-            </div>
-            <input type="submit" class="button-submit" value="Create Contact"></input>
-          </form>
-        </div>
-        <!--END CONTACT POP UP-->
-
-
-        <div class="contacts-list">
+        <div id="contacts-list">
           <table>
-            <tr><td></td><td>Name</td><td>Email</td></tr>
+            <tr><td></td><td>Name</td> <td>Email</td></tr>
             <tr> <td><img src="assets/profile1.png" class="img-profile"></img></td> 
               <td><label spellcheck="false" contenteditable="true" class="editable-text">David Gorospe</label></td>
               <td><label contenteditable="true" class="editable-text">david.gorospe@mail.utoronto.ca</label></td> 
@@ -67,10 +94,29 @@
           </table>
         </div>
 
+        <!--START CONTACT POP UP-->
+        <div id="new-contact-popup" class="popup card">
+          <form>
+            <p class="title">New Contact</p>
+            <span id="contact-close-button" class="close-button">&times;</span>
+            <input type="text" name="name" placeholder="Name" required> </input>
+            <input type="email" name="email" placeholder="Email" required> </input>
+            <label>Select a profile picture:</label>
+            <input type="file" name="profile"></input>
+            <input type="submit" class="button-submit" value="Create Contact"></input>
+          </form>
+        </div>
+        <!--END CONTACT POP UP-->
+
       </div>
     </div>
   
-    <!--footer goes here-->
+    <!-- FOOTER -->
+    <div class="div-footer">
+      <footer class="footer">
+        <div class="div-footer-text">Copyright 2024.</div>
+      </footer>
+    </div>
   </body>
 
 </html>
