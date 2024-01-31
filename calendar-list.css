@@ -3,7 +3,7 @@ Change Colour of Page
 */
 
 .body-calendar-list{
-  background-color: var(--light);
+  background-color: var(--color-background);
 }
 
 /*
