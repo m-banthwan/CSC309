@@ -1,10 +1,12 @@
-.body {
-  overflow-x: hidden;
+:root {
+  --group-width: 300px; 
+  --group-height: 200px;
 }
-  
+
+/*-------------------STYLING-------------------*/
 #contacts-page-container {
   display: grid; 
-  grid-template-columns: 300px 1fr; /*this is hardcoded right now ???*/
+  grid-template-columns: var(--group-width) 1fr; /*this is hardcoded right now ???*/
   gap: 0.2rem; 
   justify-content: center;
   height: 100%;
@@ -13,8 +15,10 @@
 /*-------------------groups card*/
 .contacts-group-container {
   display: grid;
-  height: 90%;
   grid-template-rows: 60px 1fr 60px;
+  align-self: start;
+  min-height: 300px; 
+  margin-left: 2rem; 
 }
 
 .contacts-groups-list {
@@ -43,7 +47,6 @@
   grid-template-rows: auto 1fr;
   padding: 0.75rem; 
   height: 100%; 
-  width: 80% 
 }
 
 #add-contacts-btn {
@@ -53,6 +56,7 @@
 #contacts-title {
   grid-column: 1;
   margin-top: 25px;
+  margin-left: 1.5rem;
 }
 
 #contacts-list {
@@ -82,7 +86,6 @@ table {
   position: fixed;
   z-index: 1;
   background-color: white;
-  height: 50%;
   width: 320px;
   top: 50%; 
   left: 50%; 
@@ -107,31 +110,36 @@ form > input[type=file] {
   font-size: 20px;
   cursor: pointer;
 }
+#add-groups-btn {
+  margin: 2rem 1rem 3rem 1rem; 
+}
 
 /*------------------SCREENS*/
-@media screen and (min-width:1000px) {
-  #contacts-page-container {
-    display: grid; 
-    grid-template-columns: 300px 1fr;  
-    gap: 1rem; 
-    justify-content: center;
-    height: 100%
+@media screen and (min-width:1200px) {
+  :root {
+    --group-width: 500px; 
   }
+  #contacts-page-container {
+    gap: 2rem; 
+  }
+}
 
+@media screen and (max-width:500) {
+  .contacts-group-container {
+    margin-left: 0; 
+  }
 }
 
 @media screen and (max-width:900px) {
   #contacts-page-container {
-    display: grid; 
-    grid-template-rows: 200px 1fr;  
+    grid-template-rows: auto 1fr;  
     grid-template-columns: none; 
     gap: 0.2rem; 
     justify-content: center;
-    height: 100%
   }
   .contacts-group-container {
     grid-row: 1;
-    height: 100%;
+    min-height: 100%;
     grid-template-rows: 60px 1fr;
   }
   #add-groups-btn, #group-title {
@@ -141,14 +149,4 @@ form > input[type=file] {
     grid-row: 2;
     margin-top: 5rem;
   }
-}
-
-@media screen and (max-width:500) {
-  body {
-    width: 100vw; 
-  }
-  #contacts-page-container {
-    width: 100%; 
-  }
-  
 }

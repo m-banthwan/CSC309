@@ -3,21 +3,43 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="header-footer.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="body-container background-login">
-        
+    <div class="body-container">
+      <!-- HEADER -->
+      <div class="div-header">
+        <header class="header">
+          <div class="div-header-content">
+            <div class="div-icon">
+              <a class="a-nav" id="icon">1on1</a>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- BODY CONTENT -->
+    
+      <div class="content-wrap background-login">
         <form class="card">
           <p class="title">Login</p>
           <input type="email" name="email" placeholder="Email" required> </input>
-          <input type="text" name="password" placeholder="Password" required> </input>
-          <input type="button" class="button-submit" value="Login"></input>
+          <input type="password" name="password" placeholder="Password" required> </input>
+          <input type="submit" class="button-submit" value="Login"></input>
           <a href="forgotPassword.html">Forgot Password?</a>
         </form>
-      <p>Don't have an account? Create one <a href="newAccount.html">here</a>.</p>
+        <p>Don't have an account? Create one <a href="newAccount.html">here</a>.</p>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="div-footer">
+        <footer class="footer">
+          <div class="div-footer-text">Copyright 2024.</div>
+        </footer>
+      </div>
+
     </div>
-    
   </body>
 
 </html>

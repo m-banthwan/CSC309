@@ -54,7 +54,32 @@ function adjustContent() {
     </table>
   `;
 
+  var oldContent = `
+  <table>
+    <tr><td></td><td>Name</td> <td>Email</td></tr>
+    <tr> <td><img src="assets/profile1.png" class="img-profile"></img></td> 
+      <td><label spellcheck="false" contenteditable="true" class="editable-text">David Gorospe</label></td>
+      <td><label contenteditable="true" class="editable-text">david.gorospe@mail.utoronto.ca</label></td> 
+    </tr>
+    <tr> <td><img src="assets/profile2.png" class="img-profile"></img></td> 
+      <td><label spellcheck="false" contenteditable="true" class="editable-text">Emily Du</label></td>
+      <td><label contenteditable="true" class="editable-text">emily.du@mail.utoronto.ca</label></td>
+    </tr>
+    <tr> <td><img src="assets/profile3.png" class="img-profile"></img></td> 
+      <td><label spellcheck="false" contenteditable="true" class="editable-text">Happy Nasit</label></td>
+      <td><label contenteditable="true" class="editable-text">happy.nasit@mail.utoronto.ca</label></td>
+    </tr>
+    <tr> <td><img src="assets/profile4.png" class="img-profile"></img></td> 
+      <td><label spellcheck="false" contenteditable="true" class="editable-text">Mugdha Banthwan</label></td>
+      <td><label contenteditable="true" class="editable-text">mugdha.banthwan@mail.utoronto.ca</label></td>
+    </tr>
+  </table>
+  `;
+
   if(window.innerWidth < 500) {
     contacts.innerHTML = newContent; 
+  }
+  else {
+    contacts.innerHTML = oldContent; 
   }
 }
