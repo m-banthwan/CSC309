@@ -61,7 +61,7 @@ Panel 1
 }
 
 .p-about{
-  font-size: 56px;
+  font-size: 3vw;
   font-weight: bold;
   color: white;
   width: 200px;
@@ -70,7 +70,7 @@ Panel 1
 
 .p-information{
   text-align: center;
-  font-size: 26px;
+  font-size: 2vw;
   color: white;
   height: 100%;
   width:100%;
