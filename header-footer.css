@@ -86,6 +86,10 @@ Dropdown for Profile Icon
 Footer Styling
 */
 
+.div-footer{
+  height: 44px;
+}
+
 .footer {
   font-family: var(--font);
   display: flex;
