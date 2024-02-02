@@ -1,0 +1,104 @@
+
+/*
+Header Styling
+*/
+
+.div-header{
+  margin-bottom: 10px;
+}
+
+.header {
+  display:inline-block;
+  font-size: 4vmin;
+  display: flex;
+  background-color: var(--darkest);
+  width: 100%;
+  height: var(--header-height);
+}
+
+.div-header-content{
+  display: flex;
+  align-items: center;
+  width: 100%
+}
+
+.a-nav{
+  font-family: var(--font);
+  font-size: var(--normal-size);
+  color: var(--light); 
+  text-decoration: none;
+  height:100%;
+  padding: 1vmin;
+  margin: 2vmin;
+  border-radius: 5px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.a-nav:hover{
+  background-color: #3b1e39;
+  color: #e23b81;
+  cursor:pointer;
+}
+
+.div-right-links{
+  position:absolute; 
+  right:60px;
+}
+
+/*
+Dropdown for Profile Icon
+*/
+
+.div-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.div-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #160b49;
+  min-width: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  text-align: center;
+  right: 0;
+}
+
+.a-dropdown-links{
+  padding: 12px 0px;
+  transition: color 0.2s;
+  color: var(--light);
+}
+
+.a-dropdown-links:hover{
+  color:#e23b81;
+  cursor:pointer;
+}
+
+.div-dropdown:hover .div-dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+Footer Styling
+*/
+
+.div-footer{
+  height: 40px;
+}
+
+.footer {
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0B032D;
+  width: 100%;
+  height: 40px;
+  color: var(--lightest);
+  bottom: 0;
+  position: absolute;
+}
