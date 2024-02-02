@@ -2,13 +2,9 @@
   font-family: var(--font);
 }
 
-.body-home{
-  background-color: var(--color-background);
-}
-
 .div-page-container{
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .text{
@@ -16,62 +12,41 @@
   margin-right: 10px;
 }
 
-/*
-Welcome message
-*/
-
-.h1-welcome{
-  background-color: rgb(202, 89, 69);
-  padding-left: 100px;
-  font-size: 48px;
-  text-align: left;
-  color: rgb(60, 24, 161);
-  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.6);
-}
-
-/*
-Panel 1
-*/
-
 .div-panel1{
-  background-size: cover;
-  background-image: url("meeting1.png");
-  height: 50rem;
-  width:100%;
   display: flex;
   align-items: center;
-}
-
-.div-about{
-  display:inline-block;
-  text-align: center;
-  width:50%;
-  display: flex;
   justify-content: center;
 }
 
-.div-information-wrapper{
-  width:50%;
-  padding-right: 40px;
+.div-description{
+  display:flex;
+  align-items: center;
+  background-size: cover;
+  background-image: url("meeting1.png");
+  height: 500px;
+  width: 60%;
 }
 
-.div-information{
-  float: right;
-  width:100%;
-}
-
-.p-about{
-  font-size: 3vw;
-  font-weight: bold;
-  color: white;
-  width: 200px;
-  height:auto;
-}
-
-.p-information{
+.h1-description{
   text-align: center;
-  font-size: 2vw;
-  color: white;
-  height: 100%;
+  color: var(--lightest);
+}
+
+.div-panel2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width:100%;
+}
+
+.div-aboutus-description{
+  width: 50%;
+}
+
+.h1-aboutus{
+  text-align: center;
+}
+
+.p-aboutus{
+  text-align: center;
 }
