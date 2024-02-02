@@ -1,0 +1,104 @@
+.main-content{
+  font-family: var(--font);
+}
+
+.div-page-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+.text{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.div-panel1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-description{
+  display:flex;
+  align-items: center;
+  background-size: cover;
+  background-image: url("meeting1.png");
+  height: 500px;
+  width: 60%;
+}
+
+.h1-description{
+  text-align: center;
+  color: var(--lightest);
+}
+
+.div-panel2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.div-panel2-content{
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+  width: 50%;
+}
+
+.div-meeting2{
+  display: flex;
+  justify-content: center;
+}
+
+.img-meeting2{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.div-aboutus-description-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.div-aboutus-description{
+  width: 50%;
+}
+
+.h1-aboutus{
+  font-size: 1.75vw;
+  text-align: center;
+}
+
+.p-aboutus{
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.div-panel3{
+  margin-bottom: 20px;
+}
+
+.h1-noaccount{
+  font-size: 1.60vw;
+  text-align: center;
+}
+
+.div-create-account{
+  display: flex;
+  justify-content: center;
+}
+
+.a-create-account:hover{
+  background-color: var(--medium);
+  cursor: pointer;
+}
+
+.a-create-account{
+  font-size: 1.5vw;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  background-color: var(--light);
+  transition: background-color 0.2s;
+}
