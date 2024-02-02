@@ -1,12 +1,4 @@
 /*
-Change Colour of Page
-*/
-
-.body-calendar-list{
-  background-color: var(--color-background);
-}
-
-/*
 Size of Page
 */
 
@@ -19,36 +11,45 @@ Size of Page
 }
 
 /*
-Add Calendar Button
+Add Calendar Button and Page Title
 */
 
-.div-add-button{
+.div-add-button-wrapper{
   width:100%;
-  display:flex;
+  display: flex;
   justify-content: right;
 }
 
+.div-add-button{
+  margin-right: 20px;
+  float: right;
+  width:auto;
+  height: 100%;
+}
+
 .span-calendar-button{
-  text-align: center;
-  width: 200px;
   border-radius: 15px;
   color:white;
-  margin:10px 20px;
-  background-color: var(--darkest);
+  padding:10px 20px;
+  background-color: var(--light);
+  transition: background-color 0.2s;
 }
 
 .span-calendar-button:hover{
-  background-color: #240e85;
+  background-color: var(--medium);
+  cursor: pointer;
 }
 
 .p-plus{
   display:inline-block;
   color:white;
+  font-size: 16px;
 }
 
 .p-calendar{
   display:inline-block;
   color:white;
+  font-size: 16px;
 }
 
 /*
@@ -57,15 +58,47 @@ Calendar Display
 
 .div-calendar-display{
   border-radius: 30px;
-  background-color: var(--medium);
-  size: 100%;
-  margin: 0px 20px;
-  height:100%;
+  box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.4);
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: var(--font);
+  display:flex;
+  align-items: center;
 }
 
 .h1-empty-list{
+  font-size: 20px;
   color: var(--darkest);
   font-family: var(--font);
-  text-align: center;
   padding: 20px;
+}
+
+/*
+Calendar 1
+*/
+.div-calendar{
+  border-radius: 30px;
+  text-align: center;
+  width: 30%;
+  padding:10px;
+  margin: 15px;
+  border-color: var(--light);
+  border-style: solid;
+  box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.2);
+  background-color: var(--lightest);
+  transition: background-color 0.2s;
+}
+
+.div-calendar:hover{
+  cursor: pointer;
+  background-color: #ffb1b1;
+}
+
+.h1-calendar-name{
+  font-size: 20px;
+}
+
+.p-availability{
+  font-size: 16px;
 }
