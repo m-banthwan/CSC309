@@ -22,7 +22,7 @@
   display:flex;
   align-items: center;
   background-size: cover;
-  background-image: url("meeting1.png");
+  background-image: url("home-page-assets/meeting1.png");
   height: 500px;
   width: 60%;
 }
