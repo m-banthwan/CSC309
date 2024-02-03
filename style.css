@@ -1,0 +1,143 @@
+:root {
+  /*colours*/
+  --lightest: #FFB997;
+  --light: #F67E7D;
+  --medium: #843B62;
+  --dark: #74546A; 
+  --darkest: #0B032D;
+  --color-link: #843B62; 
+  --color-background: #0b032d34; 
+
+  /*header & footer*/
+  --header-height: 4rem; 
+  --footer-height: 2.5rem; 
+
+  /*fonts*/
+  --font: 'Montserrat', sans-serif;
+  --title-size: 35px; 
+  --normal-size: 18px; 
+
+  /*margins*/
+  --stdn-margin: 1.5rem;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0; 
+  font-family: var(--font);
+  font-size: var(--normal-size);
+  color: black;
+}
+
+a {
+  color: var(--color-link); 
+  text-decoration: none;
+}
+.title{
+  font-size: var(--title-size);
+}
+
+.body-container {
+  width: 100%;
+  min-height: 100vh; 
+  position: relative; 
+}
+.content-wrap {
+  padding-top: var(--header-height);
+  padding-bottom: var(--footer-height);
+  min-height: calc(100vh - 2*var(--header-height) - var(--footer-height));
+}
+.background-login {
+  background-color: var(--color-background);
+  display: inline-grid; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  margin: var(--stdn-margin) 2*var(--stdn-margin); 
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.25); 
+}
+.card > * {
+  place-self: center;
+}
+
+form > input:not([type="file"]) {
+  border: 0.15rem solid var(--lightest);
+  border-radius: 1.5rem;
+  font-size: var(--normal-size);
+  color: var(--lightest);
+  padding: 0.5rem;
+}
+form > * {
+  margin-top: var(--stdn-margin);
+  place-self: center;
+  font-size: var(--normal-size);
+}
+form > input:focus {
+  border-width: 0.15rem; 
+  border-color: black;
+}
+
+
+.img-profile {
+  width: 3rem; 
+  height: 3rem; 
+  border-radius: 100%;
+}
+
+/*buttons*/
+.button-submit {
+  border: 0;
+  background-color: var(--darkest);
+  color: var(--lightest); 
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  margin-top: 50px;
+}
+
+.button-add {
+  border-radius: 100%;
+  width: 3rem; 
+  height: 3rem;
+  border: 0;
+  background-color: var(--light);
+  color: white; 
+  font-size: 2.75rem;
+  padding: 0; 
+  margin: 0.5rem; 
+  align-self: center; 
+}
+.button-add:hover {
+  background-color: var(--lightest);
+  transition: background-color 0.3s ease;
+}
+
+
+/*responsive text*/
+@media screen and (min-width: 1000px) {
+  :root {
+    --title-size: 50px;
+    --normal-size: 20px;
+    --stdn-margin: 3rem; 
+  }
+  .title {
+    margin: 1rem; 
+  }
+}
+
+  @media screen and (max-width: 500px) {    
+  :root {
+    --title-size: 25px;
+    --normal-size: 14px; 
+    --stdn-margin: .9rem;
+  }
+}

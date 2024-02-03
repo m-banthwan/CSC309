@@ -1,0 +1,152 @@
+:root {
+  --group-width: 300px; 
+  --group-height: 200px;
+}
+
+/*-------------------STYLING-------------------*/
+#contacts-page-container {
+  display: grid; 
+  grid-template-columns: var(--group-width) 1fr; /*this is hardcoded right now ???*/
+  gap: 0.2rem; 
+  justify-content: center;
+  height: 100%;
+}
+
+/*-------------------groups card*/
+.contacts-group-container {
+  display: grid;
+  grid-template-rows: 60px 1fr 60px;
+  align-self: start;
+  min-height: 300px; 
+  margin-left: 2rem; 
+}
+
+.contacts-groups-list {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  margin-top: 15px; 
+}
+
+/*groups*/
+.group {
+  font-size: var(--normal-size);
+  background-color: white;
+  border: 0; 
+  margin-top: 1rem; 
+}
+.group:hover {
+  color: black;
+}
+
+/*------------------actual contacts*/
+.contacts-container {
+  margin-top: 1rem;
+  display: grid; 
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr;
+  padding: 0.75rem; 
+  height: 100%; 
+}
+
+#add-contacts-btn {
+  grid-column: 3;
+  justify-self: center;
+}
+#contacts-title {
+  grid-column: 1;
+  margin-top: 25px;
+  margin-left: 1.5rem;
+}
+
+#contacts-list {
+  grid-column: span 2;
+}
+td {
+  padding: 10px;
+}
+table {
+  margin-left: 10px;
+}
+.editable-text {
+  border: none;   
+  margin: 5px; 
+}
+.editable-text:hover {
+  border: 2px solid var(--lightest); 
+  border-radius: 3px;
+  cursor: auto; 
+  margin: 0; 
+  padding: 3px; 
+}
+
+/*------------------POPUP*/
+.popup { 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 320px;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+form > input[type=file] {
+  font-size: var(--normal-size);
+  width: 80%;
+}
+
+.close-button {
+  position: absolute;
+  margin-top: 0;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#add-groups-btn {
+  margin: 2rem 1rem 3rem 1rem; 
+}
+
+/*------------------SCREENS*/
+@media screen and (min-width:1200px) {
+  :root {
+    --group-width: 500px; 
+  }
+  #contacts-page-container {
+    gap: 2rem; 
+  }
+}
+
+@media screen and (max-width:500) {
+  .contacts-group-container {
+    margin-left: 0; 
+  }
+}
+
+@media screen and (max-width:900px) {
+  #contacts-page-container {
+    grid-template-rows: auto 1fr;  
+    grid-template-columns: none; 
+    gap: 0.2rem; 
+    justify-content: center;
+  }
+  .contacts-group-container {
+    grid-row: 1;
+    min-height: 100%;
+    grid-template-rows: 60px 1fr;
+  }
+  #add-groups-btn, #group-title {
+    grid-row: 1;
+  }
+  .contacts-container {
+    grid-row: 2;
+    margin-top: 5rem;
+  }
+}
