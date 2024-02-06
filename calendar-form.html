@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 
+<style>
+    body {
+        align-items: center;
+    }
+    p {
+        text-align: center;
+    }
+    header {
+        text-align: center;
+    }
+    .wide {
+        height: 5rem;
+        width: 100%;
+        font-size: larger;
+        font-style: bold;
+        font-family:'Courier New', Courier, monospace;
+        border-color: white;
+        text-align: center;
+    }
+
+</style>
+
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link href="contactsStyle.css" rel="stylesheet">
+        <link href="header-footer.css" rel="stylesheet">
+        <script src="contactsScript.js"></script>
+        <title>1on1</title>
     </head>
-</html>
-
 
 <body>
+    <header>
+        <input size="50" type="text" id="meetingtitle" name="phone" placeholder="your meeting title" class="wide"> 
+    </header>
+
+    <p> Select the type of schedule you prefer:</p>
     <form>
-        
+        <select id="meetingtype" name="meetingtype" onchange="calendartype()">
+            <option value="disabled">Choose one:</option>
+            <option value="enabled">Day Schedule</option>
+            <option value="disabled"> Week's schedule</option>
+        </select>
+
+        <input type="date" id="date" disabled="disabled">
+
+        <br>
+        <label for="members">Choose contacts:</label>
+        <select required name="members" multiple>
+              <option value="DavidGorospe">David Gorospe</option>
+              <option value="EmilyDu">Emily Du</option>
+              <option value="HappyNasit">Happy Nasit</option>
+              <option value="MugdhaBanthwan">Mugdha Banthwan</option>
+        </select>
+
+        <input type="button" onclick="location.href='contacts.html';" value="submit">
+        <label></label>   
     </form>
 </body>
+
+<script src="calendar-form.js"> </script>
+
+</html>
