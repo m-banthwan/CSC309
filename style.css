@@ -56,6 +56,11 @@ a {
   text-align: center;
 }
 
+#new-account-hidden {
+  color: white; 
+  margin: 0; 
+}
+
 .card {
   background-color: white;
   display: inline-grid;
