@@ -5,8 +5,10 @@
 
 /*-------------------STYLING-------------------*/
 #contacts-page-container {
+  box-sizing: border-box;
+  max-width: 100vw;
   display: grid; 
-  grid-template-columns: var(--group-width) 1fr; /*this is hardcoded right now ???*/
+  grid-template-columns: calc(1.2*var(--group-width)) 1fr; 
   gap: 0.2rem; 
   justify-content: center;
   height: 100%;
@@ -14,11 +16,13 @@
 
 /*-------------------groups card*/
 .contacts-group-container {
+  box-sizing: border-box;
   display: grid;
   grid-template-rows: 60px 1fr 60px;
   align-self: start;
   min-height: 300px; 
   margin-left: 2rem; 
+  width: var(--group-width); 
 }
 
 .contacts-groups-list {
@@ -124,23 +128,22 @@ form > input[type=file] {
   }
 }
 
-@media screen and (max-width:500) {
-  .contacts-group-container {
-    margin-left: 0; 
-  }
-}
-
 @media screen and (max-width:900px) {
+  :root {
+    --group-width: 80%; 
+  }
   #contacts-page-container {
     grid-template-rows: auto 1fr;  
-    grid-template-columns: none; 
+    grid-template-columns: auto; 
     gap: 0.2rem; 
     justify-content: center;
   }
   .contacts-group-container {
     grid-row: 1;
     min-height: 100%;
+    margin-left: 0; 
     grid-template-rows: 60px 1fr;
+    justify-self: center;
   }
   #add-groups-btn, #group-title {
     grid-row: 1;

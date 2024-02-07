@@ -37,7 +37,7 @@ function adjustContent() {
   var newContent = `
     <table>
       <tr><td><img src="assets/profile1.png" class="img-profile"></img>
-      <label spellcheck="false" contenteditable="true" class="editable-text">David Gorospe</label></td></tr>
+      <label spellcheck="false" contenteditable="true" class="editable-text">David Gorospe (You)</label></td></tr>
       <tr><td><label contenteditable="true" class="editable-text">david.gorospe@mail.utoronto.ca</label></td></tr>
 
       <tr><td><img src="assets/profile2.png" class="img-profile"></img>
@@ -58,7 +58,7 @@ function adjustContent() {
   <table>
     <tr><td></td><td>Name</td> <td>Email</td></tr>
     <tr> <td><img src="assets/profile1.png" class="img-profile"></img></td> 
-      <td><label spellcheck="false" contenteditable="true" class="editable-text">David Gorospe</label></td>
+      <td><label spellcheck="false" contenteditable="true" class="editable-text">David Gorospe (You)</label></td>
       <td><label contenteditable="true" class="editable-text">david.gorospe@mail.utoronto.ca</label></td> 
     </tr>
     <tr> <td><img src="assets/profile2.png" class="img-profile"></img></td> 

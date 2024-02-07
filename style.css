@@ -79,9 +79,13 @@ form > input:not([type="file"]) {
   border: 0.15rem solid var(--lightest);
   border-radius: 1.5rem;
   font-size: var(--normal-size);
-  color: var(--lightest);
   padding: 0.5rem;
 }
+
+form > input:not([type="file"]):not([type="button"]) {
+  color: var(--darkest);
+}
+
 form > * {
   margin-top: var(--stdn-margin);
   place-self: center;
@@ -103,7 +107,7 @@ form > input:focus {
 .button-submit {
   border: 0;
   background-color: var(--darkest);
-  color: var(--lightest); 
+  color: var(--lightest) !important; 
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
   margin-top: 50px;
