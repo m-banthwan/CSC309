@@ -51,6 +51,7 @@ Dropdown for Profile Icon
 }
 
 .div-dropdown-content {
+  font-size: var(--normal-size);
   display: none;
   position: absolute;
   background-color: #160b49;
