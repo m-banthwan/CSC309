@@ -30,16 +30,18 @@ Add Calendar Button and Page Title
 }
 
 .a-calendar-button{
-  font-size: 16px;
-  border-radius: 15px;
-  color:white;
-  padding:10px 20px;
-  background-color: var(--light);
+  border-width: 5px;
+  font-size: 2.5vmin;
+  color: var(--lightest);
+  border: 0.15rem solid var(--lightest);
+  border-radius: 1.5rem;
+  padding: 10px 20px;
+  background-color: var(--darkest);
   transition: background-color 0.2s;
 }
 
 .a-calendar-button:hover{
-  background-color: var(--medium);
+  background-color: #9282db;
   cursor: pointer;
 }
 
@@ -48,18 +50,20 @@ Calendar Display
 */
 
 .div-calendar-display{
-  border-radius: 30px;
-  box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.4);
+  text-align: center;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   font-family: var(--font);
   display:flex;
   align-items: center;
+  justify-content: center;
 }
 
 .h1-empty-list{
-  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 4.5vmin;
   color: var(--darkest);
   font-family: var(--font);
   padding: 20px;
@@ -71,7 +75,7 @@ Calendar 1
 
 .a-calendar:hover{
   cursor: pointer;
-  background-color: #ffb1b1;
+  background-color: #f88484;
 }
 
 .a-calendar{
@@ -86,6 +90,12 @@ Calendar 1
   box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.2);
   background-color: var(--lightest);
   transition: background-color 0.2s;
+}
+
+@media screen and (max-width: 400px){
+  .a-calendar{
+    width: 80%;
+  }
 }
 
 .div-calendar-content{
