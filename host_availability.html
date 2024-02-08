@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="host_style.css">
+    <script src="hostAvail.js"></script>
+    <title>1on1</title>
+    
+  </head>
+<body>
+  
+<main>
+<div class="meeting_details">
+  <h1 id="meeting_title">CSC309 Meeting</h1>
+  <a href="calendar-list-one.html"><button class="save_calendar">Save</button></a>
+  <h3 id="host">David's Availability</h3>  
+  
+</div>
+
+<div class="a_btn">
+    <button class="left_button"  ><h4><b>Least Preferred Timings</b></h4></button>
+
+    <button class="center_button"><h4><b>Moderately Preferred Timings</b></h4> </button>
+
+    <button class="right_button"> <h4><b>Most Preferred Timings</b></h4> </button>
+
+</div>
+
+
+
+  <div class="table_container">
+    
+      <table id="avail_table">
+        <tr>
+          <th></th>
+          <th><h3 id="day">Friday</h3></th>
+        </tr>
+      <tr>
+          <th>10:00 am</th>
+          <td id="busy" onclick= "changeColor1()"></td>
+        </tr>
+        <tr>
+          <th>11:00 am</th>
+          <td></td>
+        </tr>
+        <tr>
+            <th>12:00 noon</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>01:00 pm</th>
+            <td></td>
+        </tr>
+      <tr>
+            <th>02:00 pm</th>
+            <td id="moderate" onclick= "changeColor2()"></td>
+          
+        </tr>
+        <tr>
+            <th>03:00 pm</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>04:00 pm</th>
+            <td id="free" onclick= "changeColor3()"></td>
+          </tr>
+          <tr>
+            <th>05:00 pm</th>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+       <br>
+    
+       <div class="send_emails">
+     <input type="submit" class='submit' value="Send Invites" onclick="window.location.href='mailto:mugdha.banthwan@mail.utoronto.ca?&subject=Meeting%20Invite&body=Hello%20Mugdha!%20David%20is%20inviting%20you%20to%20a%20meeting.%20Please%20fill%20your%20availability:%20'">
+
+
+
+</div>
+</main>
+
+</body>
+</html>
