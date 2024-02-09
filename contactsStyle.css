@@ -95,6 +95,9 @@ table {
   left: 50%; 
   transform: translate(-50%, -50%);
 }
+form > title {
+  margin-bottom: 0; 
+}
 form {
   display: flex;
   flex-direction: column;
@@ -151,5 +154,15 @@ form > input[type=file] {
   .contacts-container {
     grid-row: 2;
     margin-top: 5rem;
+  }
+}
+
+/*responsive text*/
+@media screen and (max-height: 450px) {
+  :root {
+    --stdn-margin: 1rem; 
+  }
+  .title {
+    margin-bottom: 0; 
   }
 }
