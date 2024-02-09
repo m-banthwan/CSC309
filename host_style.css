@@ -1,3 +1,14 @@
+:root {
+  /*colours*/
+  --lightest: #FFB997;
+  --light: #F67E7D;
+  --medium: #843B62;
+  --dark: #74546A; 
+  --darkest: #0B032D;
+  --color-link: #843B62; 
+  --color-background: #0b032d34; 
+}
+
 .meeting_details, #day{
     text-align: center;
     font-family: sans-serif;
@@ -11,7 +22,7 @@
 table{
     width: 300%;
     border-collapse: collapse;
-    
+    justify-self: center;
 }
 
 tr{
@@ -28,8 +39,7 @@ th{
 }
 
 .a_btn {
-  display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   border: none;
@@ -43,33 +53,27 @@ th{
   }
   
 .left_button{
-  background-color:#0B032D;
- border-radius: 12px;
- width:33%;
- margin-left: 300px;
- margin-right: 5px;
- color: white;
- font-weight: bold;
-
- 
+  background-color: var(--darkest);
+  border-radius: 12px;
+  margin-right: 5px;
+  color: var(--lightest);
+  font-weight: bold;
 }
-  .center_button {
-    background-color: #843B62;
-    border-radius: 12px;
-    width:33%;
-    margin-left: 5px;
- margin-right: 5px;
- color: white;
- font-weight: bold;
+.center_button {
+  background-color: var(--medium);
+  border-radius: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+  font-weight: bold;
   }
   
-  .right_button {
-    background-color: #FFB997;
-    border-radius: 12px;
-    width:33%;
-    margin-left: 5px;
+.right_button {
+  background-color: var(--lightest);
+  border-radius: 12px;
+  margin-left: 5px;
  margin-right: 10px;
- color: white;
+ color: var(--darkest);
  font-weight: bold;
 }
 
@@ -90,8 +94,8 @@ th{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: purple;
-  border-radius: 12px;
+  background-color: var(--light);
+  border-radius: 50px;
 }
 
 .send_emails{
@@ -102,7 +106,6 @@ th{
 }
 
 .submit{
-  
   width: 200px;
   justify-content: center;
   align-items: center;
@@ -114,7 +117,6 @@ th{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: purple;
-    border-radius: 12px;
+  background-color: var(--light);
+  border-radius: 50px;
 }
-
