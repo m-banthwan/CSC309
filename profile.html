@@ -62,28 +62,24 @@
             <div class="div-profile-form-wrapper">
               <div class="div-profile-form">
                 <form class="form-profile">
-                  <label for="email">
+                  <p id="profile-changes-hidden">Changes saved!</p>
+                  <label class="label-profile" for="email">
                     Change Email:
                   </label>
-                  <br>
-                  <input type="text" id="email" name="email">
-                  <br>
-                  <label for="password">
-                    Change Password:
-                  </label>
-                  <br>
-                  <input type="text" id="password" name="password">
-                  <br>
-                  <label for="phone-number">
+                  <input class="input-profile" type="text" id="email" name="email" value="david.gorospe@mail.utoronto.ca">
+                  <label class="label-profile" for="phone-number">
                     Change Phone Number:
                   </label>
-                  <br>
-                  <input type="text" id="phone-number" name="phone-number">
-                  <br>
+                  <input class="input-profile" type="text" id="phone-number" name="phone-number" value="123-456-7890">
+                  <label class="label-profile" for="password">
+                    Change Password:
+                  </label>
+                  <input class="input-profile input-password" type="text" id="password" name="password" value="password">
                   <div class="div-submit">
-                    <input class="input-submit" type="submit" value="Confirm">
+                    <input id="input-submit" class="input-submit" type="button" value="Save Changes">
                   </div>
                 </form>
+                <script src="profile.js"></script>
               </div>
             </div>
           </div>
