@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 
 
+<style>
+    .colorround {
+        width: 10%;
+        border-radius: 50px;
+        border: none;
+        background-color: var(--darkest);
+    }
+</style>
+
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="host_style.css">
     <link rel="stylesheet" href="finished-calendar.css">
+    <link rel="stylesheet" href="host_style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-footer.css">
+
     <title>1on1</title>
     
   </head>
 <body>
+
+    <div class="div-header">
+        <header class="header">
+          <div class="div-header-content">
+            <div class="div-left-links">
+              <a class="a-nav" id="icon" href="calendar-list-one.html">Back</a>
+            </div>
+          </div>
+        </header>
+    </div>
   
 <main>
 <div class="meeting_details">
@@ -19,9 +42,10 @@
 </div>
 
   <div class="table_container">
-    <table class="availability">
+    <table class="availability" id="uniform">
         <tr>
             <td id="start" class="td">0/4</td>
+            <td class="td" style="background-color: #F8F8FF;"></td>
             <td id="lightest" class="td"></td>
             <td id="light" class="td"></td>
             <td id="medium" class="td"></td>
@@ -30,14 +54,16 @@
         </tr>
     </table>
     
-      <table>
+      <table id="centerr">
         <tr>
           <th></th>
           <th><h3 id="day">Friday</h3></th>
         </tr>
       <tr>
           <th>10:00 am</th>
-          <td></td>
+          <td id="lightest">
+            <a href="#popup1"> <button class="button" id="lightest"></button></a>
+          </td>
         </tr>
         <tr>
           <th>11:00 am</th>
@@ -47,14 +73,13 @@
         </tr>
         <tr>
             <th>12:00 noon</th>
-            <td id="lightest"> 
-                <a href="#popup1"> <button class="button" id="lightest"></button></a>
+            <td>        
             </td>
         </tr>
         <tr>
             <th>01:00 pm</th>
-            <td id="lightest">
-                <a href="#popup2"> <button class="button" id="lightest"></button></a>
+            <td id="medium">
+                <a href="#popup2"> <button class="button" id="medium"></button></a>
             </td>
         </tr>
       <tr>
@@ -78,8 +103,7 @@
           </tr>
           <tr>
             <th>05:00 pm</th>
-            <td id="lightest">
-                <a href="#popup6"> <button class="button" id="lightest"></button></a>
+            <td>
             </td>
           </tr>
         </table>
@@ -88,14 +112,15 @@
 
        <div id="popup1" class="overlay">
         <div class="popup">
-            <h2>Available ones:</h2>
             <a class="close" href="#">&times;</a>
+
+            <h3>Least Preferred:</h3>
             <div class="content">
                 <table class="table">
-                    <tr> <td class="td"><img src="assets/profile2.png" class="img-profile"></img></td>
-                        <td class="td">Emily Du</td>
+                    <tr>
+                        <td class="td"><img src="assets/profile1.png" class="img-profile"></img></td> 
+                        <td class="td">David Gorospe</td>
                     </tr>
-
                 </table>
             </div>
         </div>
@@ -103,14 +128,28 @@
 
     <div id="popup2" class="overlay">
         <div class="popup">
-            <h2>Available ones:</h2>
+            <h3>Most Preferred:</h3>
             <a class="close" href="#">&times;</a>
             <div class="content">
                 <table class="table">
-                    <tr> <td class="td"><img src="assets/profile2.png" class="img-profile"></img></td>
+                    <tr> 
+                        <td class="td"><img src="assets/profile2.png" class="img-profile"></img></td>
                         <td class="td">Emily Du</td>
                     </tr>
+                    <tr>
+                        <td class="td"><img src="assets/profile3.png" class="img-profile"></img></td>
+                        <td class="td">Happy Nasit</td>
+                    </tr>
+                </table>
+            </div>
 
+            <h3>Moderately Preferred:</h3>
+            <div class="content">
+                <table class="table">
+                    <tr>
+                        <td class="td"><img src="assets/profile4.png" class="img-profile"></img></td>
+                        <td class="td">Mugdha Banthwan</td>
+                    </tr>
                 </table>
             </div>
         </div>
@@ -118,7 +157,7 @@
 
     <div id="popup3" class="overlay">
         <div class="popup">
-            <h2>Available ones:</h2>
+            <h3>Most Preferred:</h3>
             <a class="close" href="#">&times;</a>
             <div class="content">
                 <table class="table">
@@ -127,20 +166,23 @@
                         <td class="td">Emily Du</td>
                     </tr>
                     <tr>
-                        <td class="td"><img src="assets/profile1.png" class="img-profile"></img></td> 
-                        <td class="td">David Gorospe</td>
-                    </tr>
-                    <tr>
                         <td class="td"><img src="assets/profile3.png" class="img-profile"></img></td>
                         <td class="td">Happy Nasit</td>
                     </tr>
+                </table>
+            </div>
 
+            <h3>Moderately Preferred:</h3>
+            <div class="content">
+                <table class="table">
                     <tr>
                         <td class="td"><img src="assets/profile4.png" class="img-profile"></img></td>
                         <td class="td">Mugdha Banthwan</td>
                     </tr>
-
-
+                    <tr>
+                        <td class="td"><img src="assets/profile1.png" class="img-profile"></img></td> 
+                        <td class="td">David Gorospe</td>
+                    </tr>
                 </table>
             </div>
         </div>
@@ -148,7 +190,7 @@
 
     <div id="popup4" class="overlay">
         <div class="popup">
-            <h2>Available ones:</h2>
+            <h3>Most Preferred:</h3>
             <a class="close" href="#">&times;</a>
             <div class="content">
                 <table class="table">
@@ -156,17 +198,26 @@
                         <td class="td"><img src="assets/profile2.png" class="img-profile"></img></td>
                         <td class="td">Emily Du</td>
                     </tr>
-                    <tr>
-                        <td class="td"><img src="assets/profile3.png" class="img-profile"></img></td>
-                        <td class="td">Happy Nasit</td>
-                    </tr>
+                </table>
+            </div>
 
+            <h3>Moderately Preferred:</h3>
+            <div class="content">
+                <table class="table">
                     <tr>
                         <td class="td"><img src="assets/profile4.png" class="img-profile"></img></td>
                         <td class="td">Mugdha Banthwan</td>
                     </tr>
+                </table>
+            </div>
 
-
+            <h3>Least Preferred:</h3>
+            <div class="content">
+                <table class="table">
+                    <tr>
+                        <td class="td"><img src="assets/profile3.png" class="img-profile"></img></td>
+                        <td class="td">Happy Nasit</td>
+                    </tr>
                 </table>
             </div>
         </div>
@@ -174,7 +225,7 @@
 
     <div id="popup5" class="overlay">
         <div class="popup">
-            <h2>Available ones:</h2>
+            <h3>Most Preferred:</h3>
             <a class="close" href="#">&times;</a>
             <div class="content">
                 <table class="table">
@@ -182,24 +233,15 @@
                         <td class="td"><img src="assets/profile1.png" class="img-profile"></img></td> 
                         <td class="td">David Gorospe</td>
                     </tr>
-                    <tr>
-                        <td class="td"><img src="assets/profile4.png" class="img-profile"></img></td>
-                        <td class="td">Mugdha Banthwan</td>
-                    </tr>
                 </table>
             </div>
-        </div>
-    </div>
 
-    <div id="popup6" class="overlay">
-        <div class="popup">
-            <h2>Available ones:</h2>
-            <a class="close" href="#">&times;</a>
+            <h3>Least Preferred:</h3>
             <div class="content">
                 <table class="table">
-                    <tr>
-                        <td class="td"><img src="assets/profile4.png" class="img-profile"></img></td>
-                        <td class="td">Mugdha Banthwan</td>
+                    <tr> 
+                        <td class="td"><img src="assets/profile2.png" class="img-profile"></img></td>
+                        <td class="td">Emily Du</td>
                     </tr>
                 </table>
             </div>

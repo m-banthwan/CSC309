@@ -1,25 +1,33 @@
 :root {
 /*colours*/
---lightest:#FFB6C1;
---light:  #FF69B4;
---medium: #FF1493;
---dark: #C71585;
+--pink:#e6e6fa;
+--pinker:  #8370d9;
+--pinkier: #3a278c;
+--pinkest: #0B032D;
 }
 
 #lightest {
-    background-color: var(--lightest);
+    background-color: var(--pink);
 }
 
 #dark{
-    background-color: var(--dark);
+    background-color: var(--pinkest);
 }
 
 #light {
-    background-color: var(--light);
+    background-color: var(--pinker);
 }
 
 #medium {
-    background-color: var(--medium);
+    background-color: var(--pinkier);
+}
+
+#centerr {
+    table-layout: fixed;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
 }
 
 table {
@@ -48,13 +56,20 @@ td:hover {
 }
 
 .availability{
-    border: 1px solid;
     width: 30%;
-    font-family:  'Montserrat', sans-serif;
+    height: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#uniform{
+    table-layout: fixed;
+    justify-self: center;
+   
 }
 
 #start, #end{
     text-align:center;
+    font-family: 'Courier New Bold', Courier, monospace;
 }
 
 .overlay {
