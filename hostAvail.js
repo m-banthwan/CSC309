@@ -16,3 +16,9 @@ function changeColor3()
     var x = document.getElementById("free");
     x.bgColor = "#FFB997";            
 }
+
+function borderColor(){
+$('button').on('click', function(){
+    $('button').removeClass('selected');
+    $(this).addClass('selected');
+  })};
