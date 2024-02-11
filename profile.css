@@ -2,6 +2,18 @@
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 400px) {
+  .div-main{
+    margin-top: 200px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 769px){
+  .div-main{
+    margin-top: 200px;
+  }
+}
+
 .body-profile{
   font-family: var(--font);
   position: relative;
