@@ -28,6 +28,7 @@ b{
 .table_container{
     display:grid;
     justify-content: center;
+    
 }
 
 table{
@@ -53,7 +54,8 @@ th{
 }
 
 .a_btn {
-  width: 100%;
+  justify-self: center;
+  width: 98%;
   justify-content: center;
   align-items: center;
   border: none;
@@ -71,7 +73,6 @@ th{
 .left_button{
   background-color: var(--darkest);
   border-radius: 12px;
-  margin-right: 5px;
   color: var(--lightest);
   font-weight: bold;
   margin-block-end: 10px;
