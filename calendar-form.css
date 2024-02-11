@@ -1,0 +1,108 @@
+p {
+  text-align: center;
+}
+
+.wide {
+  height: 5rem;
+}
+
+form {
+  border-radius: 25px;
+  background-color: white;
+  border: 0; 
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+}
+
+#button {
+  background-color: white;
+}
+
+.div-select-calendar{
+  display: flex;
+  justify-content: center;
+}
+
+.input-style{
+  font-size: var(--font);
+  border-color: var(--lightest);
+  border-style: solid;
+  border-radius: 1.5rem;
+  background-color: white;
+  border-width: 3px;
+}
+
+.select-calendar{
+  display: block;
+}
+
+.div-date{
+  display: flex;
+  justify-content: center;
+}
+
+.input-date{
+  display: block;
+}
+
+.div-select-times{
+  display: flex;
+  justify-content: center;
+}
+
+.select-times{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 400px){
+  form{
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 769px){
+  form{
+    width: 60%;
+  }
+}
+
+.label-invite{
+  display: block;
+  text-align: center;
+}
+
+.div-select-contacts{
+  display:flex;
+  justify-content: center;
+}
+
+.select-contacts{
+  display: block;
+  border-radius: 0px;
+}
+
+.div-submit-button{
+  display: flex;
+  justify-content: center;
+}
+
+.input-submit{
+  border-width: 5px;
+  font-size: 2.5vmin;
+  color: var(--lightest);
+  border: 0.15rem solid var(--lightest);
+  border-radius: 1.5rem;
+  padding: 10px 20px;
+  background-color: var(--darkest);
+  transition: background-color 0.2s;
+}
+
+.input-submit:hover{
+  background-color: #9282db;
+  cursor: pointer;
+}

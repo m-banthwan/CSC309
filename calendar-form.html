@@ -1,137 +1,105 @@
 <!DOCTYPE html>
 
-<style>
-    body {
-        align-items: center;
-        margin-bottom: 5rem;
-    }
-    p {
-        text-align: center;
-    }
-    header {
-        text-align: center;
-    }
-    .wide {
-        height: 5rem;
-        width: 100%;
-        font-size: larger;
-        font-style: bold;
-        font-family:'Courier New Bold', Courier, monospace;
-        border-color: white;
-    }
-
-    form {
-        border-radius: 25px;
-        background-color: white;
-        border: 0; 
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-        transition: 0.3s;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        align-items: center;
-        width:50vw;
-        height: 45vw;
-    }
-
-    #button {
-        background-color: white;
-    }
-</style>
-
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" rel="stylesheet">
-        <link href="contactsStyle.css" rel="stylesheet">
         <link href="header-footer.css" rel="stylesheet">
-        <script src="contactsScript.js"></script>
+        <link href="calendar-form.css" rel="stylesheet">
         <title>1on1</title>
     </head>
 
-<body>
+<body class="body-calendar-form">
 
       
     <header class="wide"> </header>
 
     <p> Select the type of calendar you prefer:</p>
     <form>
-        <select id="meetingtype" name="meetingtype" onchange="calendartype()">
-            <option value="disabled">Choose a type of calendar:</option>
-            <option value="enabled">Day Schedule</option>
-            <option value="enabled"> Week's schedule</option>
-        </select>
+        <div class="div-select-calendar">
+            <select class="select-calendar input-style" id="meetingtype" name="meetingtype" onchange="calendartype()">
+                <option value="disabled">Choose a type of calendar:</option>
+                <option value="enabled">Day Schedule</option>
+                <option value="enabled"> Week's schedule</option>
+            </select>
+        </div>
 
-        <input type="date" id="date" disabled="disabled">
+        <div class="div-date">
+            <input class="input-date input-style" type="date" id="date" disabled="disabled">
+        </div>
 
-        <select id="meetingtype" name="meetingtype">
-            <option value="">Choose the start time:</option>
-            <option value="one">1am</option>
-            <option value="two"> 2am</option>
-            <option value="three"> 3am</option>
-            <option value="four"> 4am</option>
-            <option value="five"> 5am</option>
-            <option value="six"> 6am</option>
-            <option value="seven"> 7am</option>
-            <option value="eight"> 8am</option>
-            <option value="nine"> 9am</option>
-            <option value="ten"> 10am</option>
-            <option value="eleven"> 11am</option>
-            <option value="twelve"> 12pm</option>
-            <option value="thirteen"> 1pm</option>
-            <option value="fourteen"> 2pm</option>
-            <option value="fifteen">3pm</option>
-            <option value="sixteen"> 4pm</option>
-            <option value="seventeen"> 5pm</option>
-            <option value="eighteen"> 6pm</option>
-            <option value="nineteen"> 7pm</option>
-            <option value="twenty"> 8pm</option>
-            <option value="twentyone"> 9pm</option>
-            <option value="twentytwo"> 10pm</option>
-            <option value="twentythree"> 11pm</option>
-            <option value="zero"> 12am</option>
-        </select>
+        <div class="div-select-times">
+            <select class="input-style select-times" id="meetingtype" name="meetingtype">
+                <option value="">Choose the start time:</option>
+                <option value="one">1am</option>
+                <option value="two"> 2am</option>
+                <option value="three"> 3am</option>
+                <option value="four"> 4am</option>
+                <option value="five"> 5am</option>
+                <option value="six"> 6am</option>
+                <option value="seven"> 7am</option>
+                <option value="eight"> 8am</option>
+                <option value="nine"> 9am</option>
+                <option value="ten"> 10am</option>
+                <option value="eleven"> 11am</option>
+                <option value="twelve"> 12pm</option>
+                <option value="thirteen"> 1pm</option>
+                <option value="fourteen"> 2pm</option>
+                <option value="fifteen">3pm</option>
+                <option value="sixteen"> 4pm</option>
+                <option value="seventeen"> 5pm</option>
+                <option value="eighteen"> 6pm</option>
+                <option value="nineteen"> 7pm</option>
+                <option value="twenty"> 8pm</option>
+                <option value="twentyone"> 9pm</option>
+                <option value="twentytwo"> 10pm</option>
+                <option value="twentythree"> 11pm</option>
+                <option value="zero"> 12am</option>
+            </select>
+    
+            <select class="input-style select-times" id="meetingtype" name="meetingtype">
+                <option value="">Choose the end time:</option>
+                <option value="one">1am</option>
+                <option value="two"> 2am</option>
+                <option value="three"> 3am</option>
+                <option value="four"> 4am</option>
+                <option value="five"> 5am</option>
+                <option value="six"> 6am</option>
+                <option value="seven"> 7am</option>
+                <option value="eight"> 8am</option>
+                <option value="nine"> 9am</option>
+                <option value="ten"> 10am</option>
+                <option value="eleven"> 11am</option>
+                <option value="twelve"> 12pm</option>
+                <option value="thirteen"> 1pm</option>
+                <option value="fourteen"> 2pm</option>
+                <option value="fifteen">3pm</option>
+                <option value="sixteen"> 4pm</option>
+                <option value="seventeen"> 5pm</option>
+                <option value="eighteen"> 6pm</option>
+                <option value="nineteen"> 7pm</option>
+                <option value="twenty"> 8pm</option>
+                <option value="twentyone"> 9pm</option>
+                <option value="twentytwo"> 10pm</option>
+                <option value="twentythree"> 11pm</option>
+                <option value="zero"> 12am</option>
+            </select>
+        </div>
 
-        <select id="meetingtype" name="meetingtype">
-            <option value="">Choose the end time:</option>
-            <option value="one">1am</option>
-            <option value="two"> 2am</option>
-            <option value="three"> 3am</option>
-            <option value="four"> 4am</option>
-            <option value="five"> 5am</option>
-            <option value="six"> 6am</option>
-            <option value="seven"> 7am</option>
-            <option value="eight"> 8am</option>
-            <option value="nine"> 9am</option>
-            <option value="ten"> 10am</option>
-            <option value="eleven"> 11am</option>
-            <option value="twelve"> 12pm</option>
-            <option value="thirteen"> 1pm</option>
-            <option value="fourteen"> 2pm</option>
-            <option value="fifteen">3pm</option>
-            <option value="sixteen"> 4pm</option>
-            <option value="seventeen"> 5pm</option>
-            <option value="eighteen"> 6pm</option>
-            <option value="nineteen"> 7pm</option>
-            <option value="twenty"> 8pm</option>
-            <option value="twentyone"> 9pm</option>
-            <option value="twentytwo"> 10pm</option>
-            <option value="twentythree"> 11pm</option>
-            <option value="zero"> 12am</option>
-        </select>
+        <label class="label-invite" for="members">Choose contacts you want to invite:</label>
 
-        <br>
-        <label for="members">Choose contacts you want to invite:</label>
-        <select required name="members" multiple>
-              <option value="EmilyDu">Emily Du</option>
-              <option value="HappyNasit">Happy Nasit</option>
-              <option value="MugdhaBanthwan">Mugdha Banthwan</option>
-        </select>
+        <div class="div-select-contacts">
+            <select class="select-contacts input-style" required name="members" multiple>
+                <option value="EmilyDu">Emily Du</option>
+                <option value="HappyNasit">Happy Nasit</option>
+                <option value="MugdhaBanthwan">Mugdha Banthwan</option>
+            </select>
+        </div>
 
+        <div class="div-submit-button">
+            <input class="input-submit" type="button" onclick="location.href='host_availability.html';" value="Submit">
+        </div>
 
-        <input type="button" onclick="location.href='host_availability.html';" value="submit" id="button">
-        <label></label>   
     </form>
 
     <footer class="wide"> </footer>
