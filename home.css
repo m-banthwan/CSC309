@@ -32,6 +32,8 @@
   font-size: 5vmin;
   color: var(--lightest);
   width: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .div-panel2{
